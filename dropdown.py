@@ -6,8 +6,8 @@ from bokeh.models import HoverTool, ColumnDataSource,CategoricalColorMapper
 from bokeh.palettes import Spectral6
 from bokeh.layouts import widgetbox, row
 from bokeh.models import Slider,Select
-
-df=pd.read_csv("/Users/bhuwankarki/gapminder_bokeh/gapminder.csv")
+filepath="gapminder.csv"
+df=pd.read_csv(filepath)
 data=pd.DataFrame(df)
 
 source = ColumnDataSource(data={
